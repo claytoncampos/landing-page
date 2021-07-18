@@ -1,99 +1,88 @@
 * {
-	padding: 0;
-	margin: 0;
-	line-height: 1;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
-html{
-	font-size: 62,5%;
+html {
+  font-size: 62, 5%;
 }
 body {
-	margin: 0;
-	padding: 0;
-	background: url(../images/main-bg.jpg)center top repeat-y;
+  margin: 0;
+  padding: 0;
+  background: url(../images/main-bg.jpg) center top repeat-y;
 }
 
 ul {
-	list-style: none;}
+  list-style: none;
+}
 a {
-	text-decoration: none;
-	outline: 0!important;
+  text-decoration: none;
+  outline: 0 !important;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
-
-
 
 /*=======Header============*/
 header {
-	
 }
-header .container{
-	background: url(../images/header-bg.jpg)center bottom  no-repeat;
-	-webkit-background-size: cover;
-	background-size: cover;
-	height: 700px;
+header .container {
+  background: url(../images/header-bg.jpg) center bottom no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  height: 700px;
 
-	margin: 0 auto;
-	max-width: 1082px;
-
+  margin: 0 auto;
+  max-width: 1082px;
 }
-header .container .row{
-	display: flex;
-	text-align: center;
-	flex-direction: column;
-
-
+header .container .row {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
 }
 
 .head_text {
-	font-family: 'Just Wright';
-	color: #fff;
-	font-size: 4.8rem;
-	margin-top: 3.2rem;
-	}
+  font-family: 'Just Wright';
+  color: #fff;
+  font-size: 4.8rem;
+  margin-top: 3.2rem;
+}
 .head_text__description {
-	font-size: 1.6rem;
-	color: #fff;
-	font-family: 'Gotham Narrow Book';
-	margin-top: .8rem;
-
-
+  font-size: 1.6rem;
+  color: #fff;
+  font-family: 'Gotham Narrow Book';
+  margin-top: 0.8rem;
 }
 .title {
-	margin-top: 4.2rem;
-	font-size: 8rem;
-	 font-family: 'Caviar Dreams';
-	 font-weight: normal;
-	 color: #fff;
-	 text-align: center;
-	 position: relative;
-
-	}
-
-.title span {
-	font-size: 9rem;
-	font-weight: bold;
-	display: block;
-	margin-top: -4px;
+  margin-top: 4.2rem;
+  font-size: 8rem;
+  font-family: 'Caviar Dreams';
+  font-weight: normal;
+  color: #fff;
+  text-align: center;
+  position: relative;
 }
 
-
+.title span {
+  font-size: 9rem;
+  font-weight: bold;
+  display: block;
+  margin-top: -4px;
+}
 
 /*=============== 
 CARDS
 ==================*/
-main{
-	margin: 0 auto;
-	width: 100%
-	max-width: 1082px;
-
+main {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1082px;
 }
 
 .cards {
-  width: 90%;
+  width: 100%;
   max-width: 1082px;
   margin: auto;
   background: #fff;
@@ -108,23 +97,20 @@ main{
   line-height: 2.6rem;
   font-weight: 400;
   color: #ecf0f1;
-
 }
 
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #1A1E21;
+  background-color: #1a1e21;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   border-radius: 2px;
-
 }
 
 .card:hover {
-	transition: all 0.3s ease 0s;
-	transform: translateY(-7px);
-
+  transition: all 0.3s ease 0s;
+  transform: translateY(-7px);
 }
 
 .image {
@@ -160,7 +146,7 @@ main{
 .price {
   margin-left: auto;
   font-weight: bold;
-  padding: .3em;
+  padding: 0.3em;
   border-radius: 20px;
   background-color: #f0123e;
   filter: brightness(90%);
@@ -170,59 +156,59 @@ main{
 FORM
 ==================*/
 #form {
-  max-width:1082px;
-	width: 100%;
+  max-width: 1082px;
+  width: 100%;
   background: #f0123e;
-  margin:0 auto;
-	
+  margin: 0 auto;
 
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-
+}
+@media (max-width: 500px) {
+  .title span {
+    font-size: 8rem;
+    margin-top: 4px;
+  }
+  .form-group .input-control {
+    margin-left: 2rem;
+  }
 }
 
-@media (max-width: 700px){
-header{
-	margin: 0;
-}
-#form .form-group {
-	flex-direction: column;
-	margin-top: 5rem;
-	margin-bottom: 2rem;
-}
-#form h3 {
-  margin-top: 2rem;
-  font-size: 2rem;
-  text-align: center;
-  color: #fff;
+@media (max-width: 700px) {
+  header {
+    margin: 0;
+  }
+  #form .form-group {
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  #form h3 {
+    margin-top: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #fff;
+  }
 
-}
+  .cards {
+    width: 100%;
+  }
+  #send-info {
+    padding: 1rem;
+    background: black;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 2px;
+  }
 
-.cards{
-	width: 100%;
-
-}
-#send-info{
-	
-	padding: 1rem;
-	background: black;
-	color: white;
-	font-size: 1.4rem;
-	border-radius: 2px;
-
-}
-
-
-
-footer p{
-	margin-top: 2rem;
-}
+  footer p {
+    margin-top: 2rem;
+  }
 }
 
 #form form {
-  padding: 10px;  
-
+  padding: 10px;
 }
 
 #form h3 {
@@ -230,7 +216,6 @@ footer p{
   font-size: 2rem;
   text-align: center;
   color: #fff;
-
 }
 
 #form form label {
@@ -246,61 +231,58 @@ footer p{
 }
 
 .form-group label.right-inline {
-  text-align: right;  
+  text-align: right;
   padding-right: 8px;
   padding-left: 10px;
   width: auto;
 }
 
 .form-group .input-control {
-  
   display: block;
   margin: -4px 8px 10px;
   padding: 12px;
   font-size: 1.6rem;
-  outline: none;	
+  outline: none;
 }
- .button {
-background-color: red;
-margin: 20px 8px 10px;
-height: 3rem;
-margin: 0;
+.button {
+  background-color: red;
+  margin: 20px 8px 10px;
+  height: 3rem;
+  margin: 0;
 
- 
- /*Footer*/ 
+  /*Footer*/
 }
 
-footer{
-	width: 100%;
-	max-width: 1082px;
-	background: #f0123e;
-	margin:0 auto;
-	height: 4rem;
-	display: flex;
-	justify-content: center;
-	align-items: center
+footer {
+  width: 100%;
+  max-width: 1082px;
+  background: #f0123e;
+  margin: 0 auto;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.footer p{
-	color:white;
-	font-size: 1.6rem;
+.footer p {
+  color: white;
+  font-size: 1.6rem;
 }
 
 #send-info:hover {
-	cursor: pointer;
-	color:#f0123e;
+  cursor: pointer;
+  color: #f0123e;
 }
 
-#send-info{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin-bottom: 1rem;
+#send-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
 
-	padding: .3rem;
-	background: black;
-	color: white;
-	font-size: 1.4rem;
-	border-radius: 2px;
-
+  padding: 0.3rem;
+  background: black;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 2px;
 }
