@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MegaShoes Black Friday</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link rel="stylesheet" href="fonts/font-face.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <p class="head_text">Descontos Imperdiveis</p>
+          <p class="head_text__description">
+            Todos os produtos com até <br />
+            70% de desconto!
+          </p>
+          <h1 class="title">BLACK<br /><span>FRIDAY</span></h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content -->
+    <main>
+      <section class="cards">
+        <div class="card">
+          <div class="image">
+            <img
+              src="https://static.netshoes.com.br/produtos/tenis-nike-precision-iv-masculino/20/HZM-3780-120/HZM-3780-120_zoom1.jpg?ts=1585331353"
+            />
+          </div>
+          <div class="content">
+            <p class="title text--medium">Tênis Nike Precision IV Masculino</p>
+            <div class="info">
+              <p class="text--medium">R$ 450.00</p>
+              <p class="price text--medium">50% OFF</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Form cadastro -->
+    <section id="form">
+      <form action="POST">
+        <h3>Quero receber as promoções!</h3>
+        <div class="form-group">
+          <input
+            name="nome"
+            id="nome"
+            class="input-control"
+            placeholder="Nome"
+          />
+          <input
+            name="email"
+            id="email"
+            type="email"
+            class="input-control"
+            placeholder="Email"
+          />
+          <a
+            id="send-info"
+            type="button"
+            class="button"
+            onclick="setLocalStorage()"
+            >Enviar</a
+          >
+        </div>
+      </form>
+    </section>
+
+    <!--- Footer -->
+    <footer>
+      <div class="footer">
+        <p>MEGASHOES 2021</p>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
