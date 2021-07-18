@@ -26,5 +26,5 @@ Armazenamento de dados no <b>Local Storage</b>
 
 ### Demo
 
-Projeto armazenado na Netlify, acesse no link abaixo:
-[Landing Page - MegaShoes]("https://megashoesblackfriday.netlify.app/)
+Projeto armazenado na Netlify, acesse no link abaixo:</br>
+[Landing Page - MegaShoes](https://megashoesblackfriday.netlify.app/)
